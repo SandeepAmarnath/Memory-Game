@@ -5,7 +5,7 @@ class Picture extends Component {
   render() {
     return (
       <div className={classes.Picture}>
-        <p>Nitro</p>
+        <p>{this.props.word}</p>
       </div>
     );
   }
