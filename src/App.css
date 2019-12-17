@@ -6,6 +6,7 @@
   height: 40vmin;
   pointer-events: none;
 }
+@import url("https://fonts.googleapis.com/css?family=Caveat:400,700|Courgette&display=swap");
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

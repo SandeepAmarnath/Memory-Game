@@ -1,11 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Gameboard from "./containers/Gameboard/Gameboard";
 
 function App() {
   return (
     <div className="App">
-      <h1>Let's start coding Memory Card Game!!</h1>
+      <h1>Match Me</h1>
+      <Gameboard />
     </div>
   );
 }
