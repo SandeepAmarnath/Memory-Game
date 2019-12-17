@@ -2,4 +2,14 @@
   width: 50%;
   border: 1px solid black;
   margin: 5% 25%;
+  padding: 20px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  background-image: linear-gradient(
+    to bottom,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
 }

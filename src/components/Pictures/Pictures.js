@@ -4,17 +4,7 @@ import Picture from "../Picture/Picture";
 
 class Pictures extends Component {
   state = {
-    words: [
-      "carbon",
-      "nitro",
-      "oxy",
-      "gen",
-      "dioxide",
-      "free",
-      "cat",
-      "kit",
-      "chen"
-    ]
+    words: ["stand", "ard", "y", "ing", "sing", "ase", "er", "le", "sky"]
   };
   shuffle = (array) => {
     let counter = array.length;
