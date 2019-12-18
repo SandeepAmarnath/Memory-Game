@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classes from "./Pictures.module.css";
-import Picture from "../Picture/Picture";
+import CustomPic from "../CustomPic/CustomPic";
 
 class Pictures extends Component {
   state = {
@@ -35,20 +35,20 @@ class Pictures extends Component {
     return (
       <div className={classes.Pictures}>
         <div>
-          <Picture word={this.state.words[0]} />
-          <Picture word={this.state.words[1]} />
-          <Picture word={this.state.words[2]} />
+          <CustomPic word={this.state.words[0]} />
+          <CustomPic word={this.state.words[1]} />
+          <CustomPic word={this.state.words[2]} />
         </div>
 
         <div>
-          <Picture word={this.state.words[3]} />
-          <Picture word={this.state.words[4]} />
-          <Picture word={this.state.words[5]} />
+          <CustomPic word={this.state.words[3]} />
+          <CustomPic word={this.state.words[4]} />
+          <CustomPic word={this.state.words[5]} />
         </div>
         <div>
-          <Picture word={this.state.words[6]} />
-          <Picture word={this.state.words[7]} />
-          <Picture word={this.state.words[8]} />
+          <CustomPic word={this.state.words[6]} />
+          <CustomPic word={this.state.words[7]} />
+          <CustomPic word={this.state.words[8]} />
         </div>
       </div>
     );

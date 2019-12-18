@@ -4,11 +4,10 @@ import CustomPic from "../../components/CustomPic/CustomPic";
 class Gameboard extends Component {
   render() {
     return (
-      //   <div>
-      //     <p>Match the words in the pictures !!</p>
-      //     <Pictures />
-      //   </div>
-      <CustomPic />
+      <div>
+        <p>Match the words in the pictures !!</p>
+        <Pictures />
+      </div>
     );
   }
 }

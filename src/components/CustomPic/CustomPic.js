@@ -19,10 +19,10 @@ class CustomPic extends Component {
         onClick={this.onFlipHandler}
       >
         <div className={classes.flipboxFront}>
-          <p>Hello</p>
+          <p>{this.props.word}</p>
         </div>
         <div className={classes.flipboxBack}>
-          <p>Im' back</p>
+          <p>Flip Me</p>
         </div>
       </div>
     );
