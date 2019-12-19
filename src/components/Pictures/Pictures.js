@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classes from "./Pictures.module.css";
-import CustomPic from "../CustomPic/CustomPic";
+import Picture from "../Picture/Picture";
+import { Fragment } from "react";
 
 class Pictures extends Component {
   state = {
@@ -33,24 +34,30 @@ class Pictures extends Component {
   }
   render() {
     return (
-      <div className={classes.Pictures}>
-        <div>
-          <CustomPic word={this.state.words[0]} />
-          <CustomPic word={this.state.words[1]} />
-          <CustomPic word={this.state.words[2]} />
-        </div>
+      <Fragment>
+        <div className={classes.Pictures}>
+          <div>
+            <button>Add To The Word</button>
+            <button>New Word</button>
+          </div>
+          <div>
+            <Picture word={this.state.words[0]} />
+            <Picture word={this.state.words[1]} />
+            <Picture word={this.state.words[2]} />
+          </div>
 
-        <div>
-          <CustomPic word={this.state.words[3]} />
-          <CustomPic word={this.state.words[4]} />
-          <CustomPic word={this.state.words[5]} />
+          <div>
+            <Picture word={this.state.words[3]} />
+            <Picture word={this.state.words[4]} />
+            <Picture word={this.state.words[5]} />
+          </div>
+          <div>
+            <Picture word={this.state.words[6]} />
+            <Picture word={this.state.words[7]} />
+            <Picture word={this.state.words[8]} />
+          </div>
         </div>
-        <div>
-          <CustomPic word={this.state.words[6]} />
-          <CustomPic word={this.state.words[7]} />
-          <CustomPic word={this.state.words[8]} />
-        </div>
-      </div>
+      </Fragment>
     );
   }
 }
