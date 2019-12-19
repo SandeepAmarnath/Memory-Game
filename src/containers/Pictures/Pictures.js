@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classes from "./Pictures.module.css";
-import Picture from "../Picture/Picture";
+import Picture from "../../components/Picture/Picture";
 import { Fragment } from "react";
 
 class Pictures extends Component {
