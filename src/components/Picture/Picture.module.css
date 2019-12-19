@@ -1,17 +1,48 @@
+.outer {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+}
+
+.inner {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.outer:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.Picture,
+.backside {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
 .Picture {
-  color: rgb(150, 43, 192);
+  color: #10316b;
+  color: #cdc7db;
+
   font-family: "Caveat", cursive;
   /* font-family: "Courgette", cursive; */
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
   border: 2px solid rgb(39, 17, 2);
   display: inline-block;
   padding: 2%;
   box-sizing: border-box;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.2em;
-  width: 30%;
+  width: 25%;
   height: 120px;
-  margin: 1%;
+  margin: 2% 2%;
   background: white;
+  background: #d7dad1;
+  border-radius: 20px;
+}
+
+.backside {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
 }

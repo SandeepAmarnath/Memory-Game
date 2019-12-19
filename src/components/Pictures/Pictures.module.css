@@ -1,8 +1,8 @@
 .Pictures {
-  width: 50%;
+  width: 40%;
   border: 1px solid black;
-  margin: 5% 25%;
-  padding: 20px;
+
+  padding: 2% 0;
   box-shadow: 3px 3px 5px 6px #ccc;
   background-image: linear-gradient(
     to bottom,
@@ -12,4 +12,6 @@
     #00bf72,
     #a8eb12
   );
+  margin: 4% 30%;
+  border-radius: 30px;
 }
