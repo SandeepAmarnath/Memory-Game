@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Pictures from "../../components/Pictures/Pictures";
 import classes from "./Gameboard.module.css";
+import CustomPic from "../../components/CustomPic/CustomPic";
 class Gameboard extends Component {
   render() {
     return (
