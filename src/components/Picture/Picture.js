@@ -10,6 +10,7 @@ class CustomPic extends Component {
     const newCss = [...this.state.cssprops];
     if (newCss.includes(classes.flip)) {
       newCss.pop(classes.flip);
+      console.log(this.props.word);
     } else {
       newCss.push(classes.flip);
     }

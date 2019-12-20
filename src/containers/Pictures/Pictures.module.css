@@ -25,7 +25,9 @@ button {
   font-size: large;
   font-style: italic;
   outline: none;
+  cursor: pointer;
 }
+
 button:first-child {
   margin-right: 30px;
 }

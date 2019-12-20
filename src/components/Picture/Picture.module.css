@@ -2,17 +2,12 @@
   position: relative;
   width: 150px;
   height: 150px;
-  /* text-align: center; */
   transition: transform 0.8s;
   transform-style: preserve-3d;
   display: inline-block;
-
   margin: 3%;
 }
 
-/* .flipboxInner:hover {
-  transform: rotateY(180deg);
-} */
 .flip {
   transform: rotateY(180deg);
 }
@@ -22,16 +17,21 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  /* backface-visibility: hidden; */
+  backface-visibility: hidden;
+  cursor: pointer;
 }
 
 .flipboxFront {
-  background-color: #bbb;
-  color: black;
+  background-color: dodgerblue;
+  color: white;
 }
 
 .flipboxBack {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #bbb;
+  color: black;
   transform: rotateY(180deg);
+}
+
+p {
+  padding-top: 30px;
 }

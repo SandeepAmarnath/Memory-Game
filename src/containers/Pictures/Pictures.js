@@ -29,7 +29,7 @@ class Pictures extends Component {
   componentDidMount() {
     const newWords = [...this.state.words];
     const shuffledWords = this.shuffle(newWords);
-    console.log("Called cdm");
+    console.log("Called cdm in Pictures");
     this.setState({ words: shuffledWords });
   }
   render() {
