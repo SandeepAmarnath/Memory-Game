@@ -10,7 +10,6 @@ class CustomPic extends Component {
     const newCss = [...this.state.cssprops];
     if (newCss.includes(classes.flip)) {
       newCss.pop(classes.flip);
-      this.props.click(this.props.word);
     } else {
       newCss.push(classes.flip);
     }
@@ -27,7 +26,7 @@ class CustomPic extends Component {
           <p>{this.props.word}</p>
         </div>
         <div className={classes.flipboxBack}>
-          <p>I'm closed. Open me</p>
+          <p>Flip Me</p>
         </div>
       </div>
     );
