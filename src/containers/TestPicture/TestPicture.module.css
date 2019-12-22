@@ -1,0 +1,15 @@
+.TestPicture {
+  width: 150px;
+  height: 150px;
+  border: 30% solid black;
+}
+
+.show {
+  background-color: white;
+  color: black;
+}
+
+.hide {
+  color: black;
+  background-color: black;
+}
