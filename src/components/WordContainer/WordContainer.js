@@ -4,7 +4,7 @@ import classes from "./WordContainer.module.css";
 const wordcontainer = (props) => {
   return (
     <div className={classes.WordContainer}>
-      <p>Sandeep</p>
+      <p>{props.word}</p>
     </div>
   );
 };
