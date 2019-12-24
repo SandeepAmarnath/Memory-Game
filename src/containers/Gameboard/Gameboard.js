@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import Pictures from "../../components/Pictures/Pictures";
 import classes from "./Gameboard.module.css";
+import Pic from "../Pic/Pic";
+import Buttons from "../../components/Buttons/Buttons";
+import WordContainer from "../../components/WordContainer/WordContainer";
 class Gameboard extends Component {
   state = {
-    words: ["stand", "ard", "y", "ing", "sing", "ase", "er", "le", "sky"]
+    words: ["stand", "ard", "y", "ing", "sing", "ase", "er", "le", "sky"],
+    cssprop: "open"
   };
   shuffle = (array) => {
     let counter = array.length;
@@ -36,7 +40,9 @@ class Gameboard extends Component {
       <div className={classes.Gameboard}>
         <h1>Match Me</h1>
         <p>Match the words in the pictures !!</p>
+        <Buttons />
         <Pictures words={this.state.words} />
+        {/* <WordContainer /> */}
       </div>
     );
   }

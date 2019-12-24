@@ -1,7 +1,7 @@
 .flipboxInner {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 30%;
+  height: 30%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
   display: inline-block;
@@ -29,9 +29,9 @@
 .flipboxBack {
   background-color: #bbb;
   color: black;
-  /* transform: rotateY(180deg); */
-}
-
-.turnAround {
   transform: rotateY(180deg);
 }
+
+/* .turnAround {
+  transform: rotateY(180deg);
+} */

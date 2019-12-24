@@ -1,0 +1,22 @@
+.Button {
+  margin: 30px;
+}
+button {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  background-color: rgb(255, 153, 0);
+  padding: 2%;
+  color: white;
+  font-size: large;
+  font-style: italic;
+  outline: none;
+  cursor: pointer;
+  /* transform: translate(); */
+}
+button:hover {
+  background-color: rgb(153, 94, 6);
+}
+/* button:first-child {
+  margin-right: 50px;
+} */
