@@ -13,12 +13,12 @@ class Gameboard extends Component {
   // 1. Create new word -> existing word array should be pushed to the createdWords
   // 2. Existing word array should become empty
   // 3. New word should be pushed to the exisitng word
-  createWordClickHandler = (userWord) => {
+  createWordClickHandler = () => {
     console.log("Clicked create word handler");
     // create a new array and push this word
 
     const newWordArray = [];
-    newWordArray.push(userWord);
+    newWordArray.push(this.state.openWord);
 
     // then push this array to the created words array
     // to do this, copy the state words and then push this array into it and then set state
@@ -28,18 +28,26 @@ class Gameboard extends Component {
     console.log(this.state.createdWords);
   };
 
-  addWordClickHandler = (userWord) => {
+  addWordClickHandler = () => {
     // To add to the existing, copy the state words
     // Then add this word to the last array . NOTE : DO THIS IS A IMMUTABLE WAY
 
     const wordsCopy = JSON.parse(JSON.stringify(this.state.createdWords));
     const lastElementArray = wordsCopy[wordsCopy.length - 1];
-    lastElementArray.push(userWord);
+    lastElementArray.push(this.state.openWord);
     this.setState({ createdWords: wordsCopy });
     console.log(this.state.createdWords);
   };
+  componentDidMount() {
+    if (this.state.openWord === null) {
+      console.log("the open word is null");
+    } else {
+      console.log("The open word is ", this.state.openWord);
+    }
+  }
 
   clikedWordHandler = (openWord) => {
+    console.log("The open word is ", openWord);
     this.setState({ openWord: openWord });
   };
 
@@ -51,6 +59,7 @@ class Gameboard extends Component {
         <Buttons
           addWordClick={this.addWordClickHandler}
           createWordClick={this.createWordClickHandler}
+          {...{ status: this.state.openWord }}
         />
         <Pictures clickedWord={this.clikedWordHandler} />
         <WordContainer word={this.state.openWord} />

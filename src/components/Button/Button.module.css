@@ -12,11 +12,12 @@ button {
   font-style: italic;
   outline: none;
   cursor: pointer;
-  /* transform: translate(); */
+  transition: 0.5s;
 }
 button:hover {
   background-color: rgb(153, 94, 6);
 }
-/* button:first-child {
-  margin-right: 50px;
-} */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
