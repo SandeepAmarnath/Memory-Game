@@ -40,9 +40,9 @@ class Gameboard extends Component {
       <div className={classes.Gameboard}>
         <h1>Match Me</h1>
         <p>Match the words in the pictures !!</p>
-        <Buttons />
         <Pictures words={this.state.words} />
         {/* <WordContainer /> */}
+        <Buttons />
       </div>
     );
   }
