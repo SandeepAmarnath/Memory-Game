@@ -31,7 +31,6 @@ class Gameboard extends Component {
   componentDidMount() {
     const newWords = [...this.state.words];
     const shuffledWords = this.shuffle(newWords);
-    console.log("Called cdm");
     this.setState({ words: shuffledWords });
   }
 

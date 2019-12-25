@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classes from "./TestPicture.module.css";
+import Paper from '@material-ui/core/Paper';
 
 class TestPicture extends Component {
   render() {
@@ -23,6 +24,7 @@ class TestPicture extends Component {
           <p>{this.props.word}</p>
         </div>
       </div>
+      
     );
   }
 }

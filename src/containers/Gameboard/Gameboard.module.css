@@ -2,12 +2,14 @@
   font-family: "Courgette", cursive;
   font-size: 1.2em;
   letter-spacing: 0.2%;
-  background-color: #172a3a;
+  background-color: #282c34;
+  height: 100vh;
 }
 
-h1 {
+h1,p{
   color: white;
 }
 
+/* This is Viajy's code
 
-/* This is Viajy's code */
+#282c34*/
