@@ -6,6 +6,7 @@ import Buttons from "../../components/Buttons/Buttons";
 import WordContainer from "../../components/WordContainer/WordContainer";
 class Gameboard extends Component {
   state = {
+    addWordEligible: false,
     createdWords: [],
     openWord: null
   };
@@ -14,7 +15,7 @@ class Gameboard extends Component {
   // 2. Existing word array should become empty
   // 3. New word should be pushed to the exisitng word
   createWordClickHandler = () => {
-    console.log("Clicked create word handler");
+    // console.log("Clicked create word handler");
     // create a new array and push this word
 
     const newWordArray = [];
@@ -24,8 +25,10 @@ class Gameboard extends Component {
     // to do this, copy the state words and then push this array into it and then set state
     const wordsCopy = [...this.state.createdWords];
     wordsCopy.push(newWordArray);
-    this.setState({ createdWords: wordsCopy });
-    console.log(this.state.createdWords);
+    this.setState({
+      createdWords: wordsCopy,
+      addWordEligible: true
+    });
   };
 
   addWordClickHandler = () => {
@@ -35,10 +38,15 @@ class Gameboard extends Component {
     const wordsCopy = JSON.parse(JSON.stringify(this.state.createdWords));
     const lastElementArray = wordsCopy[wordsCopy.length - 1];
     lastElementArray.push(this.state.openWord);
-    this.setState({ createdWords: wordsCopy });
+    this.setState({
+      createdWords: wordsCopy
+    });
     console.log(this.state.createdWords);
   };
   componentDidMount() {
+    // constwordsArrayLength = { ...this.state.wordsArrayLength };
+
+    // wordsArrayLength = this.state.createdWords.length;
     if (this.state.openWord === null) {
       console.log("the open word is null");
     } else {
@@ -59,10 +67,13 @@ class Gameboard extends Component {
         <Buttons
           addWordClick={this.addWordClickHandler}
           createWordClick={this.createWordClickHandler}
-          {...{ status: this.state.openWord }}
+          {...{
+            status: this.state.openWord
+          }}
+          btnShow={this.state.addWordEligible}
         />
         <Pictures clickedWord={this.clikedWordHandler} />
-        <WordContainer word={this.state.openWord} />
+        <WordContainer words={this.state.createdWords} />
       </div>
     );
   }

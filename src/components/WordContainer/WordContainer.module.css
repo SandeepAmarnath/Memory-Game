@@ -1,7 +1,6 @@
 .WordContainer {
   border: 1px solid black;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 20px;
   margin-top: 50px;
   width: 25%;
   height: auto;
