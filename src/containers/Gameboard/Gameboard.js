@@ -6,20 +6,19 @@ import Buttons from "../../components/Buttons/Buttons";
 import WordContainer from "../../components/WordContainer/WordContainer";
 class Gameboard extends Component {
   state = {
-    existingWord: [],
-    newWord: null,
-    createdWords: []
+    createdWords: [],
+    openWord: null
   };
   // Steps:
   // 1. Create new word -> existing word array should be pushed to the createdWords
   // 2. Existing word array should become empty
   // 3. New word should be pushed to the exisitng word
-  createWordClickHandler = () => {
+  createWordClickHandler = (userWord) => {
     console.log("Clicked create word handler");
     // create a new array and push this word
 
     const newWordArray = [];
-    newWordArray.push("New Word");
+    newWordArray.push(userWord);
 
     // then push this array to the created words array
     // to do this, copy the state words and then push this array into it and then set state
@@ -29,16 +28,21 @@ class Gameboard extends Component {
     console.log(this.state.createdWords);
   };
 
-  addWordClickHandler = () => {
+  addWordClickHandler = (userWord) => {
     // To add to the existing, copy the state words
     // Then add this word to the last array . NOTE : DO THIS IS A IMMUTABLE WAY
 
     const wordsCopy = JSON.parse(JSON.stringify(this.state.createdWords));
     const lastElementArray = wordsCopy[wordsCopy.length - 1];
-    lastElementArray.push("Existing word");
+    lastElementArray.push(userWord);
     this.setState({ createdWords: wordsCopy });
     console.log(this.state.createdWords);
   };
+
+  clikedWordHandler = (openWord) => {
+    this.setState({ openWord: openWord });
+  };
+
   render() {
     return (
       <div className={classes.Gameboard}>
@@ -48,8 +52,8 @@ class Gameboard extends Component {
           addWordClick={this.addWordClickHandler}
           createWordClick={this.createWordClickHandler}
         />
-        <Pictures />
-        <WordContainer word="word" />
+        <Pictures clickedWord={this.clikedWordHandler} />
+        <WordContainer word={this.state.openWord} />
       </div>
     );
   }

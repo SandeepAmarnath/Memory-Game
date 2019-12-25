@@ -45,16 +45,6 @@ class Pictures extends Component {
           imgStatus: "hide"
         }
       ]
-    },
-
-    test: "open"
-  };
-
-  testHandler = () => {
-    if (this.state.test === "open") {
-      this.setState({ test: "close" });
-    } else {
-      this.setState({ test: "open" });
     }
   };
 
@@ -68,7 +58,7 @@ class Pictures extends Component {
         word.imgStatus = "hide";
       }
     }
-
+    this.props.clickedWord(openWord);
     this.setState({ img: newState.img });
   };
 
