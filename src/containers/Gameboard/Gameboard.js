@@ -56,6 +56,7 @@ class Gameboard extends Component {
         <Board
           clickedWord={this.clikedWordHandler}
           words={this.state.createdWords}
+          status={this.state.addWordEligible}
         />
       </div>
     );

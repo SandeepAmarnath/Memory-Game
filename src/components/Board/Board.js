@@ -6,7 +6,7 @@ import classes from "./Board.module.css";
 const board = (props) => {
   return (
     <div className={classes.Board}>
-      <WordContainer words={props.words} />
+      {props.status ? <WordContainer words={props.words} /> : null}
       <Pictures clickedWord={props.clickedWord} />
     </div>
   );
