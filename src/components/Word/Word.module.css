@@ -3,7 +3,8 @@
   background-color: wheat;
   display: inline-block;
   margin: 2%;
-  padding: 2%;
-  border-radius: 10px;
-  padding-right: 6%;
+  padding: 1%;
+  padding-right: 7%;
+  font-size: 0.9em;
+  height: 25px;
 }
