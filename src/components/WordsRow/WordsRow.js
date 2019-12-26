@@ -6,6 +6,7 @@ const WordsRow = (props) => {
   return (
     <div className={classes.WordsRow}>
       <Word word={"Word 1"} />
+      <Word word={"Word 1"} />
     </div>
   );
 };

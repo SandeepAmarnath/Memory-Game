@@ -7,6 +7,12 @@ const wordcontainer = (props) => {
     <div className={classes.WordContainer}>
       <h4>Words Selected</h4>
       <WordsRow />
+      <WordsRow />
+      <WordsRow />
+      <WordsRow />
+      <WordsRow />
+      <WordsRow />
+      <WordsRow />
     </div>
   );
 };
