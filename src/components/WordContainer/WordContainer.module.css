@@ -1,12 +1,25 @@
 .WordContainer {
   border: 1px solid black;
-  padding: 20px;
-  margin-top: 50px;
-  width: 25%;
-  height: auto;
-  text-align: left;
   background-color: yellowgreen;
+  margin-right: 5%;
+  width: 20%;
+  display: inline-block;
+  height: 530px;
+  vertical-align: top;
   border-radius: 20px;
-  color: black;
-  font-size: larger;
+  -webkit-box-shadow: 10px 9px 18px -4px rgba(13, 12, 10, 1);
+  -moz-box-shadow: 10px 9px 18px -4px rgba(13, 12, 10, 1);
+  box-shadow: 10px 9px 18px -4px rgb(3, 5, 5);
+}
+
+@media (max-width: 1000px) {
+  .WordContainer {
+    height: 430px;
+  }
+}
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: blueviolet;
+  font-size: 1.2em;
 }

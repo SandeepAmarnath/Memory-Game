@@ -1,11 +1,12 @@
 import React from "react";
 import classes from "./WordContainer.module.css";
-import Word from "../Word/Word";
+import Words from "../Words/Words";
 
 const wordcontainer = (props) => {
   return (
     <div className={classes.WordContainer}>
-      <Word word={props.words} />
+      <h4>Words Selected</h4>
+      <Words />
     </div>
   );
 };

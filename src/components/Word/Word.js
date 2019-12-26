@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import classes from "./Word.module.css";
 const word = (props) => {
   return (
     <div className={classes.Word}>
-      <li>{props.word}</li>
+      <p>{props.word}</p>
     </div>
   );
 };

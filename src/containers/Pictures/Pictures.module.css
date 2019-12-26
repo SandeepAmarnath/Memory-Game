@@ -1,0 +1,16 @@
+.Pictures {
+  width: 30%;
+  padding: 2%;
+  padding-bottom: 1%;
+  border: 1px solid black;
+  display: inline-block;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  background-color: green;
+  border-radius: 30px;
+}
+
+@media (max-width: 1000px) {
+  .Pictures {
+    width: 20%;
+  }
+}

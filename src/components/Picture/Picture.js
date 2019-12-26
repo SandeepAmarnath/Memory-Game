@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import classes from "./TestPicture.module.css";
+import classes from "./Picture.module.css";
 
-class TestPicture extends Component {
+class Picture extends Component {
   render() {
-    const styles = [classes.TestPicture, classes.show];
+    const styles = [classes.Picture, classes.show];
 
     if (this.props.status === "hide") {
       styles.pop(classes.show);
@@ -20,11 +20,11 @@ class TestPicture extends Component {
         className={styles.join(" ")}
       >
         <div>
-          <p>{this.props.word}</p>
+          <h3>{this.props.word}</h3>
         </div>
       </div>
     );
   }
 }
 
-export default TestPicture;
+export default Picture;

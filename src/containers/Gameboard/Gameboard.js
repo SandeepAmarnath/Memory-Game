@@ -1,28 +1,21 @@
 import React, { Component } from "react";
-import Pictures from "../../components/Pictures/Pictures";
 import classes from "./Gameboard.module.css";
-import Pic from "../Pic/Pic";
 import Buttons from "../../components/Buttons/Buttons";
-import WordContainer from "../../components/WordContainer/WordContainer";
+import Board from "../../components/Board/Board";
 class Gameboard extends Component {
   state = {
     addWordEligible: false,
     createdWords: [],
     openWord: null
   };
-  // Steps:
-  // 1. Create new word -> existing word array should be pushed to the createdWords
-  // 2. Existing word array should become empty
-  // 3. New word should be pushed to the exisitng word
+
   createWordClickHandler = () => {
-    // console.log("Clicked create word handler");
     // create a new array and push this word
+    // then push this array to the created words array
+    // to do this, copy the state words and then push this array into it and then set state
 
     const newWordArray = [];
     newWordArray.push(this.state.openWord);
-
-    // then push this array to the created words array
-    // to do this, copy the state words and then push this array into it and then set state
     const wordsCopy = [...this.state.createdWords];
     wordsCopy.push(newWordArray);
     this.setState({
@@ -41,18 +34,7 @@ class Gameboard extends Component {
     this.setState({
       createdWords: wordsCopy
     });
-    console.log(this.state.createdWords);
   };
-  componentDidMount() {
-    // constwordsArrayLength = { ...this.state.wordsArrayLength };
-
-    // wordsArrayLength = this.state.createdWords.length;
-    if (this.state.openWord === null) {
-      console.log("the open word is null");
-    } else {
-      console.log("The open word is ", this.state.openWord);
-    }
-  }
 
   clikedWordHandler = (openWord) => {
     console.log("The open word is ", openWord);
@@ -63,7 +45,6 @@ class Gameboard extends Component {
     return (
       <div className={classes.Gameboard}>
         <h1>Match Me</h1>
-        <p>Match the words in the pictures !!</p>
         <Buttons
           addWordClick={this.addWordClickHandler}
           createWordClick={this.createWordClickHandler}
@@ -72,8 +53,10 @@ class Gameboard extends Component {
           }}
           btnShow={this.state.addWordEligible}
         />
-        <Pictures clickedWord={this.clikedWordHandler} />
-        <WordContainer words={this.state.createdWords} />
+        <Board
+          clickedWord={this.clikedWordHandler}
+          words={this.state.createdWords}
+        />
       </div>
     );
   }

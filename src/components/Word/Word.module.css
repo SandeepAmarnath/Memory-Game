@@ -1,3 +1,9 @@
-li {
-  list-style: none;
+.Word {
+  border: 1px solid white;
+  background-color: wheat;
+  display: inline-block;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  padding-right: 6%;
 }
