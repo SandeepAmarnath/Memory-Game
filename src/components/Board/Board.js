@@ -7,7 +7,11 @@ const board = (props) => {
   return (
     <div className={classes.Board}>
       {props.status ? <WordContainer words={props.words} /> : null}
-      <Pictures clickedWord={props.clickedWord} />
+      <Pictures
+        clickedWord={props.clickedWord}
+        openWord={props.openWord}
+        hiddenWords={props.hiddenWords}
+      />
     </div>
   );
 };

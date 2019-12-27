@@ -5,8 +5,9 @@ import classes from "./WordsRow.module.css";
 const WordsRow = (props) => {
   return (
     <div className={classes.WordsRow}>
-      <Word word={"Word 1"} />
-      <Word word={"Word 1"} />
+      {props.words.map((word) => {
+        return <Word key={word} word={word} />;
+      })}
     </div>
   );
 };

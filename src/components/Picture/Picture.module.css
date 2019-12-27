@@ -15,10 +15,15 @@
 }
 
 .hide {
-  color: black;
+  /* color: black; */
   background-color: black;
+  text-indent: -9999px;
+  white-space: nowrap;
 }
 h3 {
   padding-top: 25%;
   font-weight: 200;
+}
+.hidePic {
+  visibility: hidden;
 }

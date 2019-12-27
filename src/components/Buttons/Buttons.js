@@ -9,11 +9,13 @@ const buttons = (props) => {
         name="Add to the word"
         click={props.addWordClick}
         disabled={!props.btnShow}
+        openWord={props.status}
       />
       <Button
         name="Create new word"
         click={props.createWordClick}
         disabled={!props.status}
+        openWord={props.status}
       />
     </div>
   );

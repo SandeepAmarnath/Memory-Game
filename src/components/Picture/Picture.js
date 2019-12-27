@@ -8,11 +8,17 @@ class Picture extends Component {
     if (this.props.status === "hide") {
       styles.pop(classes.show);
       styles.push(classes.hide);
+      // if (styles.includes(classes.hidePic)) {
+      //   styles.pop(classes.hidePic);
+      // }
     } else if (this.props.status === "show") {
       styles.pop(classes.hide);
       styles.push(classes.show);
     }
-    // console.log(this.props.status + "is th e");
+
+    if (this.props.invisible) {
+      styles.push(classes.hidePic);
+    }
 
     return (
       <div

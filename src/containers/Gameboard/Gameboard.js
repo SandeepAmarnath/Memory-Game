@@ -6,38 +6,64 @@ class Gameboard extends Component {
   state = {
     addWordEligible: false,
     createdWords: [],
-    openWord: null
+    openWord: null,
+    hiddenWords: [],
+    wordAddable: true
   };
 
   createWordClickHandler = () => {
     // create a new array and push this word
     // then push this array to the created words array
     // to do this, copy the state words and then push this array into it and then set state
-
+    const hiddenWords = [...this.state.hiddenWords];
+    const flattendWords = [...this.state.hiddenWords.flat(Infinity)];
+    if (flattendWords.includes(this.state.openWord)) {
+      this.setState({ wordAddable: false });
+      return;
+    }
+    hiddenWords.push(this.state.openWord);
     const newWordArray = [];
     newWordArray.push(this.state.openWord);
     const wordsCopy = [...this.state.createdWords];
     wordsCopy.push(newWordArray);
     this.setState({
       createdWords: wordsCopy,
-      addWordEligible: true
+      addWordEligible: true,
+      hiddenWords: hiddenWords,
+      wordAddable: true
     });
+    // here once the word is added or created, it should become invisble on the board. Also, if this word is deleted
+    // on the left pannel then this word should again become visible on the board. So we pass css to the word through
+    // the click of this handler
   };
 
   addWordClickHandler = () => {
     // To add to the existing, copy the state words
     // Then add this word to the last array . NOTE : DO THIS IS A IMMUTABLE WAY
+    const hiddenWords = [...this.state.hiddenWords];
+    const flattendWords = [...this.state.hiddenWords.flat(Infinity)];
+    if (flattendWords.includes(this.state.openWord)) {
+      this.setState({ wordAddable: false });
+      return;
+    }
+
+    hiddenWords.push(this.state.openWord);
 
     const wordsCopy = JSON.parse(JSON.stringify(this.state.createdWords));
     const lastElementArray = wordsCopy[wordsCopy.length - 1];
     lastElementArray.push(this.state.openWord);
     this.setState({
-      createdWords: wordsCopy
+      createdWords: wordsCopy,
+      hiddenWords: hiddenWords,
+      wordAddable: true
     });
+
+    // here once the word is added or created, it should become invisble on the board. Also, if this word is deleted
+    // on the left pannel then this word should again become visible on the board. So we pass css to the word through
+    // the click of this handler
   };
 
   clikedWordHandler = (openWord) => {
-    console.log("The open word is ", openWord);
     this.setState({ openWord: openWord });
   };
 
@@ -52,11 +78,14 @@ class Gameboard extends Component {
             status: this.state.openWord
           }}
           btnShow={this.state.addWordEligible}
+          wordAddable={this.state.wordAddable}
         />
         <Board
           clickedWord={this.clikedWordHandler}
           words={this.state.createdWords}
           status={this.state.addWordEligible}
+          openWord={this.state.openWord}
+          hiddenWords={this.state.hiddenWords}
         />
       </div>
     );
