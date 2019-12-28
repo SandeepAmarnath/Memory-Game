@@ -13,7 +13,7 @@ const wordcontainer = (props) => {
           <WordsRow
             key={index}
             words={wordsSet}
-            iconClick={props.iconClick.bind(this, index)}
+            iconClick={props.iconClick.bind(this, index, wordsSet)}
           />
         );
       })}

@@ -68,16 +68,23 @@ class Gameboard extends Component {
     this.setState({ openWord: openWord });
   };
 
-  rowDeleteHandler = (rowIndex) => {
+  rowDeleteHandler = (rowIndex, wordsSet) => {
+    // I should first remove all these words from the hidden words array so that it
+    // gains back its visibility on the board
+    const hiddenWords = [...this.state.hiddenWords];
+
+    const updatedHiddenWords = hiddenWords.filter(
+      (element) => !wordsSet.includes(element)
+    );
+
     const wordsCreated = [...this.state.createdWords];
-    console.log("The words before splice");
 
-    console.log(wordsCreated);
     wordsCreated.splice(rowIndex, 1);
-    console.log("The words after splice");
 
-    console.log(wordsCreated);
-    this.setState({ createdWords: wordsCreated });
+    this.setState({
+      createdWords: wordsCreated,
+      hiddenWords: updatedHiddenWords
+    });
   };
 
   render() {
