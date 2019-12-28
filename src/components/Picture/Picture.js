@@ -1,19 +1,24 @@
 import React, { Component } from "react";
-import classes from "./TestPicture.module.css";
-import Paper from '@material-ui/core/Paper';
+import classes from "./Picture.module.css";
 
-class TestPicture extends Component {
+class Picture extends Component {
   render() {
-    const styles = [classes.TestPicture, classes.show];
+    const styles = [classes.Picture, classes.show];
 
     if (this.props.status === "hide") {
       styles.pop(classes.show);
       styles.push(classes.hide);
+      // if (styles.includes(classes.hidePic)) {
+      //   styles.pop(classes.hidePic);
+      // }
     } else if (this.props.status === "show") {
       styles.pop(classes.hide);
       styles.push(classes.show);
     }
-    // console.log(this.props.status + "is th e");
+
+    if (this.props.invisible) {
+      styles.push(classes.hidePic);
+    }
 
     return (
       <div
@@ -21,12 +26,11 @@ class TestPicture extends Component {
         className={styles.join(" ")}
       >
         <div>
-          <p>{this.props.word}</p>
+          <h3>{this.props.word}</h3>
         </div>
       </div>
-      
     );
   }
 }
 
-export default TestPicture;
+export default Picture;

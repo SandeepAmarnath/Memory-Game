@@ -1,0 +1,29 @@
+.Picture {
+  width: 31.33%;
+  display: inline-block;
+  border: 30% solid black;
+  margin-right: 3%;
+  margin-bottom: 3%;
+  height: 150px;
+}
+.Picture:last-child {
+  margin-right: 0;
+}
+.show {
+  background-color: white;
+  color: black;
+}
+
+.hide {
+  /* color: black; */
+  background-color: black;
+  text-indent: -9999px;
+  white-space: nowrap;
+}
+h3 {
+  padding-top: 25%;
+  font-weight: 200;
+}
+.hidePic {
+  visibility: hidden;
+}

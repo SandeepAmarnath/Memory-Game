@@ -1,0 +1,8 @@
+.Word {
+  background-color: #ccc;
+  display: inline-block;
+  margin: 2%;
+  padding: 3%;
+  font-size: 0.9em;
+  border-radius: 10px;
+}
