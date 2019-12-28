@@ -9,8 +9,10 @@ const buttons = () => (
     <Button name="Create new word" /> */}
     <Button variant="contained" color="primary">
     Add to the word
-    </Button>
-    <Button variant="contained">Create new word</Button>
+    </Button> &nbsp;
+    <Button variant="contained">Create new word</Button> <br/><br/>
+    <Button variant="contained" color="primary">Check</Button>&nbsp;
+    <Button variant="contained">Start Again</Button>
   </div>
 );
 export default buttons;

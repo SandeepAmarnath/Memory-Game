@@ -1,8 +1,17 @@
 import React, { Component } from "react";
+
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+
+
+
 import Pictures from "../../components/Pictures/Pictures";
+import ListContainer from "../../containers/ListContainer/ListContainer"
 import classes from "./Gameboard.module.css";
 import Pic from "../Pic/Pic";
 import Buttons from "../../components/Buttons/Buttons";
+
 import WordContainer from "../../components/WordContainer/WordContainer";
 class Gameboard extends Component {
   state = {
@@ -37,11 +46,25 @@ class Gameboard extends Component {
   render() {
     return (
       <div className={classes.Gameboard}>
-        <h1>Match Me</h1>
+      <Grid container spacing={0}>
+        <Grid item xs={12}>
+          <h1>Match Me</h1>
+        </Grid>
+        <Grid item xs={12}>
         <p>Match the words in the pictures !!</p>
-        <Pictures words={this.state.words} />
-        {/* <WordContainer /> */}
-        <Buttons />
+        </Grid>
+        <Grid item xs={3}>
+          <ListContainer/>
+        </Grid>
+        <Grid item xs={12}>
+          <Pictures words={this.state.words} />
+        </Grid>
+        <Grid item xs={12}>
+          <Buttons />
+        </Grid>
+      </Grid>
+
+        
       </div>
     );
   }

@@ -1,12 +1,10 @@
 .TestPicture {
   width: 150px;
   height: 150px;
-  border: 30% solid black;
+  border: 30% solid white;
   margin: 10px;
   
 }
-
-
 .show {
   background-color: white;
   color: black;
