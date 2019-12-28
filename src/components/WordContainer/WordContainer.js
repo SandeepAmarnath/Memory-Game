@@ -9,7 +9,9 @@ const wordcontainer = (props) => {
     <div className={classes.WordContainer}>
       <h4>Words Selected</h4>
       {allWords.map((wordsSet, index) => {
-        return <WordsRow key={index} words={wordsSet} />;
+        return (
+          <WordsRow key={index} words={wordsSet} iconClick={props.iconClick} />
+        );
       })}
     </div>
   );

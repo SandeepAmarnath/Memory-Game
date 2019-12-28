@@ -8,6 +8,9 @@ const WordsRow = (props) => {
       {props.words.map((word) => {
         return <Word key={word} word={word} />;
       })}
+      <div onClick={props.iconClick} className={classes.icon}>
+        <i className={["far", "fa-window-close"].join(" ")}></i>
+      </div>
     </div>
   );
 };

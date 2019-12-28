@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classes from "./Gameboard.module.css";
 import Buttons from "../../components/Buttons/Buttons";
 import Board from "../../components/Board/Board";
+// import "font-awesome/css/font-awesome.min.css";
 class Gameboard extends Component {
   state = {
     addWordEligible: false,

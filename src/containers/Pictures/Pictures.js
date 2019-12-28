@@ -3,6 +3,7 @@ import classes from "./Pictures.module.css";
 import Picture from "../../components/Picture/Picture";
 
 class Pictures extends Component {
+  // words = stand, ing, cow,ard, hard,ship,space,craft,yard
   state = {
     img: {
       words: [
@@ -15,31 +16,31 @@ class Pictures extends Component {
           imgStatus: "hide"
         },
         {
-          word: "y",
-          imgStatus: "hide"
-        },
-        {
           word: "ing",
           imgStatus: "hide"
         },
         {
-          word: "sing",
+          word: "cow",
           imgStatus: "hide"
         },
         {
-          word: "ase",
+          word: "ship",
           imgStatus: "hide"
         },
         {
-          word: "er",
+          word: "hard",
           imgStatus: "hide"
         },
         {
-          word: "le",
+          word: "craft",
           imgStatus: "hide"
         },
         {
-          word: "sky",
+          word: "yard",
+          imgStatus: "hide"
+        },
+        {
+          word: "space",
           imgStatus: "hide"
         }
       ]
