@@ -63,8 +63,6 @@ class Gameboard extends Component {
           <Buttons />
         </Grid>
       </Grid>
-
-        
       </div>
     );
   }
