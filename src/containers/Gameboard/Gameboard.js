@@ -68,6 +68,18 @@ class Gameboard extends Component {
     this.setState({ openWord: openWord });
   };
 
+  rowDeleteHandler = (rowIndex) => {
+    const wordsCreated = [...this.state.createdWords];
+    console.log("The words before splice");
+
+    console.log(wordsCreated);
+    wordsCreated.splice(rowIndex, 1);
+    console.log("The words after splice");
+
+    console.log(wordsCreated);
+    this.setState({ createdWords: wordsCreated });
+  };
+
   render() {
     return (
       <div className={classes.Gameboard}>
@@ -87,6 +99,7 @@ class Gameboard extends Component {
           status={this.state.addWordEligible}
           openWord={this.state.openWord}
           hiddenWords={this.state.hiddenWords}
+          iconClick={this.rowDeleteHandler}
         />
       </div>
     );
