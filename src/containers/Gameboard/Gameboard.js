@@ -85,6 +85,10 @@ class Gameboard extends Component {
       createdWords: wordsCreated,
       hiddenWords: updatedHiddenWords
     });
+
+    if (updatedHiddenWords.length === 0) {
+      this.setState({ addWordEligible: false });
+    }
   };
 
   render() {

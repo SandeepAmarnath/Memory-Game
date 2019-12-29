@@ -22,3 +22,7 @@ h4 {
   color: blueviolet;
   font-size: 1.2em;
 }
+
+.hideWordContainer {
+  display: none;
+}

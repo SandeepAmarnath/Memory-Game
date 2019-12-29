@@ -9,10 +9,6 @@ class Picture extends Component {
       styles.pop(classes.show);
       styles.push(classes.hide);
       word = "cheating uh";
-
-      // if (styles.includes(classes.hidePic)) {
-      //   styles.pop(classes.hidePic);
-      // }
     } else if (this.props.status === "show") {
       styles.pop(classes.hide);
       styles.push(classes.show);

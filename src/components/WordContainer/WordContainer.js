@@ -4,9 +4,16 @@ import WordsRow from "../WordsRow/WordsRow";
 
 const wordcontainer = (props) => {
   const allWords = props.words;
-
+  let styles = [classes.WordContainer];
+  if (allWords.length === 0) {
+    styles.push(classes.hideWordContainer);
+  } else {
+    if (styles.includes(classes.hideWordContainer)) {
+      styles.pop(classes.hideWordContainer);
+    }
+  }
   return (
-    <div className={classes.WordContainer}>
+    <div className={styles.join(" ")}>
       <h4>Words Selected</h4>
       {allWords.map((wordsSet, index) => {
         return (
