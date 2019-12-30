@@ -79,6 +79,9 @@ h4 {
     overflow-y: hidden;
     white-space: nowrap;
   }
+  .WordsSelectedText {
+    display: none;
+  }
 }
 @media (max-width: 350px) {
   .WordContainer {
