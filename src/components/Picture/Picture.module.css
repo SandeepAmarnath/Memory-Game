@@ -83,3 +83,11 @@ h3 {
     cursor: pointer;
   }
 }
+
+@media (max-width: 375px) {
+  .Picture {
+    height: 90px;
+    font-size: 0.6em;
+    cursor: pointer;
+  }
+}

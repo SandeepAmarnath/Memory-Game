@@ -72,7 +72,7 @@
   /* You can tweak this as per your requirement */
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .WordsRow {
     text-align: left;
     display: inline-block;
