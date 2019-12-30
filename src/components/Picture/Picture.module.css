@@ -71,7 +71,7 @@ h3 {
 @media (max-width: 490px) {
   .Picture {
     height: 90px;
-    font-size: 0.5em;
+    font-size: 0.7em;
     cursor: pointer;
   }
 }
@@ -79,7 +79,7 @@ h3 {
 @media (max-width: 440px) {
   .Picture {
     height: 90px;
-    font-size: 0.5em;
+    font-size: 0.7em;
     cursor: pointer;
   }
 }

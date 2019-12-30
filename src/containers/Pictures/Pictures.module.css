@@ -52,37 +52,3 @@
     display: block;
   }
 }
-
-/*
-@media (max-width: 700px) {
-  .Pictures {
-    width: 42%;
-    padding: 3%;
-    padding-bottom: 1%;
-    display: block;
-  }
-}
-
-@media (max-width: 550px) {
-  .Picture {
-    height: 90px;
-    font-size: 0.55em;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 490px) {
-  .Picture {
-    height: 90px;
-    font-size: 0.5em;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 440px) {
-  .Picture {
-    height: 90px;
-    font-size: 0.5em;
-    cursor: pointer;
-  }
-} */
