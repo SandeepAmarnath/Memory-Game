@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SandeepAmarnath/Memory-Word-Game.git/precache-manifest.95c84b7dde4c1ea59b7c478a6b5e7d49.js"
+  "/SandeepAmarnath/Memory-Word-Game.git/precache-manifest.05efb02093d11e0db37e82acc24fa1fd.js"
 );
 
 self.addEventListener('message', (event) => {

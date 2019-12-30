@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e968821fdcf9a0698afd3549b0a9febc",
+    "revision": "577f6a1e4ea88c340a99bc807abc7d91",
     "url": "/SandeepAmarnath/Memory-Word-Game.git/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SandeepAmarnath/Memory-Word-Game.git/static/css/2.bf3ee393.chunk.css"
   },
   {
-    "revision": "3deb8c38ef2dd840312b",
-    "url": "/SandeepAmarnath/Memory-Word-Game.git/static/css/main.5cad9734.chunk.css"
+    "revision": "2118e880a10ea4b8b3ff",
+    "url": "/SandeepAmarnath/Memory-Word-Game.git/static/css/main.c50db939.chunk.css"
   },
   {
     "revision": "9c27f9318b563676cc3e",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SandeepAmarnath/Memory-Word-Game.git/static/js/2.00306522.chunk.js.LICENSE"
   },
   {
-    "revision": "3deb8c38ef2dd840312b",
+    "revision": "2118e880a10ea4b8b3ff",
     "url": "/SandeepAmarnath/Memory-Word-Game.git/static/js/main.6855a950.chunk.js"
   },
   {

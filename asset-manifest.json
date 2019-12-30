@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SandeepAmarnath/Memory-Word-Game.git/static/css/main.5cad9734.chunk.css",
+    "main.css": "/SandeepAmarnath/Memory-Word-Game.git/static/css/main.c50db939.chunk.css",
     "main.js": "/SandeepAmarnath/Memory-Word-Game.git/static/js/main.6855a950.chunk.js",
     "main.js.map": "/SandeepAmarnath/Memory-Word-Game.git/static/js/main.6855a950.chunk.js.map",
     "runtime-main.js": "/SandeepAmarnath/Memory-Word-Game.git/static/js/runtime-main.529c785f.js",
@@ -9,10 +9,10 @@
     "static/js/2.00306522.chunk.js": "/SandeepAmarnath/Memory-Word-Game.git/static/js/2.00306522.chunk.js",
     "static/js/2.00306522.chunk.js.map": "/SandeepAmarnath/Memory-Word-Game.git/static/js/2.00306522.chunk.js.map",
     "index.html": "/SandeepAmarnath/Memory-Word-Game.git/index.html",
-    "precache-manifest.95c84b7dde4c1ea59b7c478a6b5e7d49.js": "/SandeepAmarnath/Memory-Word-Game.git/precache-manifest.95c84b7dde4c1ea59b7c478a6b5e7d49.js",
+    "precache-manifest.05efb02093d11e0db37e82acc24fa1fd.js": "/SandeepAmarnath/Memory-Word-Game.git/precache-manifest.05efb02093d11e0db37e82acc24fa1fd.js",
     "service-worker.js": "/SandeepAmarnath/Memory-Word-Game.git/service-worker.js",
     "static/css/2.bf3ee393.chunk.css.map": "/SandeepAmarnath/Memory-Word-Game.git/static/css/2.bf3ee393.chunk.css.map",
-    "static/css/main.5cad9734.chunk.css.map": "/SandeepAmarnath/Memory-Word-Game.git/static/css/main.5cad9734.chunk.css.map",
+    "static/css/main.c50db939.chunk.css.map": "/SandeepAmarnath/Memory-Word-Game.git/static/css/main.c50db939.chunk.css.map",
     "static/js/2.00306522.chunk.js.LICENSE": "/SandeepAmarnath/Memory-Word-Game.git/static/js/2.00306522.chunk.js.LICENSE",
     "static/media/all.min.css": "/SandeepAmarnath/Memory-Word-Game.git/static/media/fa-solid-900.f6121be5.woff2"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.529c785f.js",
     "static/css/2.bf3ee393.chunk.css",
     "static/js/2.00306522.chunk.js",
-    "static/css/main.5cad9734.chunk.css",
+    "static/css/main.c50db939.chunk.css",
     "static/js/main.6855a950.chunk.js"
   ]
 }
