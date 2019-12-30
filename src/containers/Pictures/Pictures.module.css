@@ -2,10 +2,10 @@
   width: 26%;
   padding: 2%;
   padding-bottom: 1%;
-  border: 1px solid #008F7A;
+  border: 1px solid inear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);;
   display: inline-block;
   box-shadow: 0 12px 12px -3px #1c1c1d80;
-  background-color: #008F7A;
+  background-image: linear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);;
   border-radius: 3px;
 }
 

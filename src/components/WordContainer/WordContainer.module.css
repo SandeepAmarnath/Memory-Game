@@ -1,6 +1,6 @@
 .WordContainer {
-  border-radius: 5px solid #008F7A;
-  background-color: #008F7A;
+  border-radius: 5px solid linear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);;
+  background-image: linear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);;
   margin-right: 5%;
   padding: 5px;
   width: 25%;

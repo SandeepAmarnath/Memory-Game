@@ -3,7 +3,9 @@
   font-size: 1.2em;
   letter-spacing: 0.2%;
   text-align: center;
-  background-color: #008F7A;
+  background-image: linear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);;
+  height: 100vh;
+
 }
 
 h1 {
