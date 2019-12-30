@@ -80,7 +80,16 @@ h4 {
     white-space: nowrap;
   }
 }
-
+@media (max-width: 350px) {
+  .WordContainer {
+    display: block;
+    margin-bottom: 50px;
+    width: 80%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+}
 /* 
 @media (max-width: 550px) {
   .Picture {

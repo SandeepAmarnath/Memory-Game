@@ -8,3 +8,9 @@
 h1 {
   color: rgb(92, 55, 124);
 }
+
+@media (max-width: 420px) {
+  h1 {
+    display: none;
+  }
+}

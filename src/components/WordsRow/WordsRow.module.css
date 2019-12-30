@@ -71,6 +71,33 @@
 @media (max-width: 700px) {
   /* You can tweak this as per your requirement */
 }
+
+@media (max-width: 350px) {
+  .WordsRow {
+    text-align: left;
+    display: inline-block;
+    width: 34%;
+    padding: 2%;
+    padding-top: 25px;
+    padding-right: 6%;
+    margin: 2%;
+    height: 50px;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .icon {
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    font-size: 0.8em;
+    color: rgb(209, 78, 78);
+    cursor: pointer;
+  }
+}
+
 /* 
 @media (max-width: 550px) {
   .Picture {
