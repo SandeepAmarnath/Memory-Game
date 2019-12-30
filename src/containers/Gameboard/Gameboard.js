@@ -95,6 +95,14 @@ class Gameboard extends Component {
     return (
       <div className={classes.Gameboard}>
         <h1>Match Me</h1>
+        <Board
+          clickedWord={this.clikedWordHandler}
+          words={this.state.createdWords}
+          status={this.state.addWordEligible}
+          openWord={this.state.openWord}
+          hiddenWords={this.state.hiddenWords}
+          iconClick={this.rowDeleteHandler}
+        />
         <Buttons
           addWordClick={this.addWordClickHandler}
           createWordClick={this.createWordClickHandler}
@@ -103,14 +111,6 @@ class Gameboard extends Component {
           }}
           btnShow={this.state.addWordEligible}
           wordAddable={this.state.wordAddable}
-        />
-        <Board
-          clickedWord={this.clikedWordHandler}
-          words={this.state.createdWords}
-          status={this.state.addWordEligible}
-          openWord={this.state.openWord}
-          hiddenWords={this.state.hiddenWords}
-          iconClick={this.rowDeleteHandler}
         />
       </div>
     );

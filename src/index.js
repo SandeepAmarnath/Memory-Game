@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Icon from '@material-ui/core/Icon';
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
