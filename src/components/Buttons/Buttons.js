@@ -18,6 +18,11 @@ const buttons = (props) => {
         disabled={!props.status}
         openWord={props.status}
       />
+      <Button
+        name="Match the words"
+        click={props.matchWordsClick}
+        disabled={!props.matchWordEligible}
+      />
     </div>
   );
 };
