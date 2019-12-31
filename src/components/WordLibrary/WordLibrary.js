@@ -82,7 +82,7 @@ const wordLib = {
         "blad",
         "ever"
       ],
-      solutions: ["forever", "attraction", "machine", "heighest", "bladder"]
+      solutions: ["forever", "attraction", "machine", "highest", "bladder"]
     }
   }
 };
