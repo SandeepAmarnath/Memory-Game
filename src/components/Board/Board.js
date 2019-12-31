@@ -13,6 +13,7 @@ const board = (props) => {
         clickedWord={props.clickedWord}
         openWord={props.openWord}
         hiddenWords={props.hiddenWords}
+        wordLibrary={props.wordLibrary}
       />
     </div>
   );

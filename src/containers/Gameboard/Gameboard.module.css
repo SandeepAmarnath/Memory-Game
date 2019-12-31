@@ -5,12 +5,34 @@
   text-align: center;
 }
 
+.message {
+  font-size: large;
+}
+
 h1 {
   color: rgb(92, 55, 124);
 }
 
 @media (max-width: 420px) {
-  h1 {
-    display: none;
+  .message {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 620px) {
+  .message {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 440px) {
+  .message {
+    font-size: small;
+  }
+}
+
+@media (max-width: 350px) {
+  .message {
+    font-size: smaller;
   }
 }

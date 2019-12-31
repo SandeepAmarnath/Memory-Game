@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import classes from "./Gameboard.module.css";
 import Buttons from "../../components/Buttons/Buttons";
 import Board from "../../components/Board/Board";
-// import "font-awesome/css/font-awesome.min.css";
+import { wordLibrary } from "../../components/WordLibrary/WordLibrary";
+
 class Gameboard extends Component {
   state = {
+    wordLibrary: wordLibrary,
     addWordEligible: false,
     createdWords: [],
     openWord: null,
@@ -38,10 +40,6 @@ class Gameboard extends Component {
     // here once the word is added or created, it should become invisble on the board. Also, if this word is deleted
     // on the left pannel then this word should again become visible on the board. So we pass css to the word through
     // the click of this handler
-
-    // if (this.state.createdWords.length === 9) {
-    //   this.setState({ matchEligible: true });
-    // }
   };
 
   addWordClickHandler = () => {
@@ -70,10 +68,6 @@ class Gameboard extends Component {
     // here once the word is added or created, it should become invisble on the board. Also, if this word is deleted
     // on the left pannel then this word should again become visible on the board. So we pass css to the word through
     // the click of this handler
-
-    // if (this.state.createdWords.length === 9) {
-    //   this.setState({ matchEligible: true });
-    // }
   };
 
   clikedWordHandler = (openWord) => {
@@ -104,10 +98,6 @@ class Gameboard extends Component {
   };
 
   matchWordsHandler = () => {
-    const matchableWords = [...this.state.createdWords];
-    console.log("These are the matched words");
-    console.log(matchableWords);
-
     const words = [];
 
     const createdWords = [...this.state.createdWords];
@@ -117,14 +107,14 @@ class Gameboard extends Component {
     });
 
     this.setState({ finalizedWords: words });
-    console.log(words);
 
-    const myWords = ["standing", "spacecraft", "coward", "hardship", "yard"];
+    const myWords = wordLibrary.solutions;
+
     let allFounded = myWords.every((ai) => words.includes(ai));
     if (allFounded) {
-      alert("You Win, congrats!! The words are \n" + myWords.join("\n"));
+      alert("YOU WIN, CONGRATS!! THE WORDS ARE :  \n\n\n" + myWords.join("\n"));
     } else {
-      alert("You lost, sorry:( The words are \n" + myWords.join("\n"));
+      alert("YOU LOST, SORRY :( THE WORDS ARE \n\n\n" + myWords.join("\n"));
     }
     window.location.reload();
   };
@@ -133,6 +123,18 @@ class Gameboard extends Component {
     return (
       <div className={classes.Gameboard}>
         <h1>Match Me</h1>
+        <p
+          className={classes.message}
+          style={{ letterSpacing: "0.5px", color: "brown" }}
+        >
+          Join to make{" "}
+          <span
+            style={{ fontWeight: "bold", color: "green", fontSize: "larger" }}
+          >
+            {wordLibrary.solutions.length}
+          </span>{" "}
+          words out of 9 subwords in the grid
+        </p>
         <Buttons
           addWordClick={this.addWordClickHandler}
           createWordClick={this.createWordClickHandler}
@@ -145,6 +147,7 @@ class Gameboard extends Component {
           matchWordEligible={this.state.addWordEligible}
         />
         <Board
+          wordLibrary={this.state.wordLibrary}
           clickedWord={this.clikedWordHandler}
           words={this.state.createdWords}
           status={this.state.addWordEligible}
@@ -158,33 +161,3 @@ class Gameboard extends Component {
 }
 
 export default Gameboard;
-
-// state = {
-//   words: ["stand", "ard", "y", "ing", "sing", "ase", "er", "le", "sky"],
-//   cssprop: "open"
-// };
-// shuffle = (array) => {
-//   let counter = array.length;
-
-//   // While there are elements in the array
-//   while (counter > 0) {
-//     // Pick a random index
-//     let index = Math.floor(Math.random() * counter);
-
-//     // Decrease counter by 1
-//     counter--;
-
-//     // And swap the last element with it
-//     let temp = array[counter];
-//     array[counter] = array[index];
-//     array[index] = temp;
-//   }
-
-//   return array;
-// };
-// componentDidMount() {
-//   const newWords = [...this.state.words];
-//   const shuffledWords = this.shuffle(newWords);
-//   console.log("Called cdm");
-//   this.setState({ words: shuffledWords });
-// }
