@@ -14,7 +14,7 @@ const wordcontainer = (props) => {
   }
   return (
     <div className={styles.join(" ")}>
-      <h4>Words Selected</h4>
+      <h4 className={classes.WordsSelectedText}>Words Selected</h4>
       {allWords.map((wordsSet, index) => {
         return (
           <WordsRow

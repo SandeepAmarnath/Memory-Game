@@ -30,6 +30,17 @@
   }
 }
 
+@media (max-width: 440px) {
+  .Board {
+    margin-left: 13%;
+  }
+}
+
+@media (max-width: 350px) {
+  .Board {
+    margin-left: 12%;
+  }
+}
 /*
 @media (max-width: 700px) {
   .Board {

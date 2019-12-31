@@ -9,7 +9,9 @@ class Gameboard extends Component {
     createdWords: [],
     openWord: null,
     hiddenWords: [],
-    wordAddable: true
+    wordAddable: true,
+    matchEligible: false,
+    finalizedWords: []
   };
 
   createWordClickHandler = () => {
@@ -36,9 +38,15 @@ class Gameboard extends Component {
     // here once the word is added or created, it should become invisble on the board. Also, if this word is deleted
     // on the left pannel then this word should again become visible on the board. So we pass css to the word through
     // the click of this handler
+
+    // if (this.state.createdWords.length === 9) {
+    //   this.setState({ matchEligible: true });
+    // }
   };
 
   addWordClickHandler = () => {
+    // console.log(this.state.createdWords.length);
+
     // To add to the existing, copy the state words
     // Then add this word to the last array . NOTE : DO THIS IS A IMMUTABLE WAY
     const hiddenWords = [...this.state.hiddenWords];
@@ -62,6 +70,10 @@ class Gameboard extends Component {
     // here once the word is added or created, it should become invisble on the board. Also, if this word is deleted
     // on the left pannel then this word should again become visible on the board. So we pass css to the word through
     // the click of this handler
+
+    // if (this.state.createdWords.length === 9) {
+    //   this.setState({ matchEligible: true });
+    // }
   };
 
   clikedWordHandler = (openWord) => {
@@ -91,10 +103,47 @@ class Gameboard extends Component {
     }
   };
 
+  matchWordsHandler = () => {
+    const matchableWords = [...this.state.createdWords];
+    console.log("These are the matched words");
+    console.log(matchableWords);
+
+    const words = [];
+
+    const createdWords = [...this.state.createdWords];
+
+    createdWords.map((individualArr) => {
+      return words.push(individualArr.join(""));
+    });
+
+    this.setState({ finalizedWords: words });
+    console.log(words);
+
+    const myWords = ["standing", "spacecraft", "coward", "hardship", "yard"];
+    let allFounded = myWords.every((ai) => words.includes(ai));
+    if (allFounded) {
+      alert("You Win, congrats!! The words are \n" + myWords.join("\n"));
+    } else {
+      alert("You lost, sorry:( The words are \n" + myWords.join("\n"));
+    }
+    window.location.reload();
+  };
+
   render() {
     return (
       <div className={classes.Gameboard}>
         <h1>Match Me</h1>
+        <Buttons
+          addWordClick={this.addWordClickHandler}
+          createWordClick={this.createWordClickHandler}
+          matchWordsClick={this.matchWordsHandler}
+          {...{
+            status: this.state.openWord
+          }}
+          btnShow={this.state.addWordEligible}
+          wordAddable={this.state.wordAddable}
+          matchWordEligible={this.state.addWordEligible}
+        />
         <Board
           clickedWord={this.clikedWordHandler}
           words={this.state.createdWords}
@@ -102,15 +151,6 @@ class Gameboard extends Component {
           openWord={this.state.openWord}
           hiddenWords={this.state.hiddenWords}
           iconClick={this.rowDeleteHandler}
-        />
-        <Buttons
-          addWordClick={this.addWordClickHandler}
-          createWordClick={this.createWordClickHandler}
-          {...{
-            status: this.state.openWord
-          }}
-          btnShow={this.state.addWordEligible}
-          wordAddable={this.state.wordAddable}
         />
       </div>
     );

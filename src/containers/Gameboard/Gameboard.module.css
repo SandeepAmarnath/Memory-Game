@@ -5,9 +5,14 @@
   text-align: center;
   background-image: linear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);;
   height: 100vh;
-
 }
 
 h1 {
   color:white;
+}
+
+@media (max-width: 420px) {
+  h1 {
+    display: none;
+  }
 }

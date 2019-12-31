@@ -45,3 +45,13 @@
     display: block;
   }
 }
+
+@media (max-width: 350px) {
+  .Buttons {
+    margin: 2% 0;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    width: 100%;
+    display: block;
+  }
+}

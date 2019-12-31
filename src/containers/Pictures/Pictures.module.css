@@ -2,10 +2,10 @@
   width: 26%;
   padding: 2%;
   padding-bottom: 1%;
-  border: 1px solid inear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);;
+  border: 1px solid linear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);
   display: inline-block;
   box-shadow: 0 12px 12px -3px #1c1c1d80;
-  background-image: linear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);;
+  background-image: linear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);
   border-radius: 3px;
 }
 
@@ -46,9 +46,18 @@
 
 @media (max-width: 440px) {
   .Pictures {
-    width: 64%;
-    padding: 4%;
-    padding-bottom: 1%;
+    width: 67%;
+    padding: 5%;
+    padding-bottom: 2%;
+    display: block;
+  }
+}
+
+@media (max-width: 350px) {
+  .Pictures {
+    width: 75%;
+    padding: 7%;
+    padding-bottom: 4%;
     display: block;
   }
 }
