@@ -40,6 +40,10 @@ class Gameboard extends Component {
     // here once the word is added or created, it should become invisble on the board. Also, if this word is deleted
     // on the left pannel then this word should again become visible on the board. So we pass css to the word through
     // the click of this handler
+
+    // if (this.state.createdWords.length === 9) {
+    //   this.setState({ matchEligible: true });
+    // }
   };
 
   addWordClickHandler = () => {
@@ -68,6 +72,10 @@ class Gameboard extends Component {
     // here once the word is added or created, it should become invisble on the board. Also, if this word is deleted
     // on the left pannel then this word should again become visible on the board. So we pass css to the word through
     // the click of this handler
+
+    // if (this.state.createdWords.length === 9) {
+    //   this.setState({ matchEligible: true });
+    // }
   };
 
   clikedWordHandler = (openWord) => {
@@ -98,6 +106,7 @@ class Gameboard extends Component {
   };
 
   matchWordsHandler = () => {
+
     const words = [];
 
     const createdWords = [...this.state.createdWords];
@@ -108,6 +117,7 @@ class Gameboard extends Component {
 
     this.setState({ finalizedWords: words });
 
+
     const myWords = wordLibrary.solutions;
 
     let allFounded = myWords.every((ai) => words.includes(ai));
@@ -115,6 +125,7 @@ class Gameboard extends Component {
       alert("YOU WIN, CONGRATS!! THE WORDS ARE :  \n\n\n" + myWords.join("\n"));
     } else {
       alert("YOU LOST, SORRY :( THE WORDS ARE \n\n\n" + myWords.join("\n"));
+
     }
     window.location.reload();
   };

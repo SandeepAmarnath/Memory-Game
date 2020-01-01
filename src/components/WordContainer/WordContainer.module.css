@@ -1,20 +1,21 @@
 .WordContainer {
-  border: 1px solid black;
-  background-color: yellowgreen;
+  border-radius: 5px solid linear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);;
+  background-color: yellowgreen;	  
+  background-image: linear-gradient(to right top, #2150c8, #4646bb, #5a3bae, #682fa0, #712291);
   margin-right: 5%;
-  padding: 5px;
-  width: 25%;
-  display: inline-block;
-  vertical-align: top;
-  -webkit-box-shadow: 10px 9px 18px -4px rgba(13, 12, 10, 1);
-  -moz-box-shadow: 10px 9px 18px -4px rgba(13, 12, 10, 1);
-  box-shadow: 10px 9px 18px -4px rgb(3, 5, 5);
+  padding: 5px;	 
+  width: 25%;	
+  display: inline-block;	  
+  vertical-align: top;	  
+  -webkit-box-shadow: 10px 9px 18px -4px rgba(13, 12, 10, 1);	 
+  -moz-box-shadow: 10px 9px 18px -4px rgba(13, 12, 10, 1);	  
+  box-shadow: 0 12px 12px -3px #1c1c1d80;
 }
 
 h4 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: blueviolet;
+  color: white;
   font-size: 1.2em;
   /*  */
 }
@@ -44,7 +45,7 @@ h4 {
   h4 {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: blueviolet;
+    color: white;
     font-size: 0.9em;
   }
 }
