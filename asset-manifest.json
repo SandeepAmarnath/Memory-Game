@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Memory-Word-Game/static/css/main.6cd4510f.chunk.css",
+    "main.css": "/Memory-Word-Game/static/css/main.684eaa2a.chunk.css",
     "main.js": "/Memory-Word-Game/static/js/main.178a771f.chunk.js",
     "main.js.map": "/Memory-Word-Game/static/js/main.178a771f.chunk.js.map",
     "runtime-main.js": "/Memory-Word-Game/static/js/runtime-main.6fe761c3.js",
@@ -9,10 +9,10 @@
     "static/js/2.bd98ab50.chunk.js": "/Memory-Word-Game/static/js/2.bd98ab50.chunk.js",
     "static/js/2.bd98ab50.chunk.js.map": "/Memory-Word-Game/static/js/2.bd98ab50.chunk.js.map",
     "index.html": "/Memory-Word-Game/index.html",
-    "precache-manifest.865cfa26b9d27a7967673f105ceed216.js": "/Memory-Word-Game/precache-manifest.865cfa26b9d27a7967673f105ceed216.js",
+    "precache-manifest.06443a82432728482762a4cebd64b59c.js": "/Memory-Word-Game/precache-manifest.06443a82432728482762a4cebd64b59c.js",
     "service-worker.js": "/Memory-Word-Game/service-worker.js",
     "static/css/2.8248f107.chunk.css.map": "/Memory-Word-Game/static/css/2.8248f107.chunk.css.map",
-    "static/css/main.6cd4510f.chunk.css.map": "/Memory-Word-Game/static/css/main.6cd4510f.chunk.css.map",
+    "static/css/main.684eaa2a.chunk.css.map": "/Memory-Word-Game/static/css/main.684eaa2a.chunk.css.map",
     "static/js/2.bd98ab50.chunk.js.LICENSE": "/Memory-Word-Game/static/js/2.bd98ab50.chunk.js.LICENSE",
     "static/media/all.min.css": "/Memory-Word-Game/static/media/fa-solid-900.f6121be5.woff2"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.6fe761c3.js",
     "static/css/2.8248f107.chunk.css",
     "static/js/2.bd98ab50.chunk.js",
-    "static/css/main.6cd4510f.chunk.css",
+    "static/css/main.684eaa2a.chunk.css",
     "static/js/main.178a771f.chunk.js"
   ]
 }
