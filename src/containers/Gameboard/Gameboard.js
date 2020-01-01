@@ -106,7 +106,6 @@ class Gameboard extends Component {
   };
 
   matchWordsHandler = () => {
-
     const words = [];
 
     const createdWords = [...this.state.createdWords];
@@ -117,7 +116,6 @@ class Gameboard extends Component {
 
     this.setState({ finalizedWords: words });
 
-
     const myWords = wordLibrary.solutions;
 
     let allFounded = myWords.every((ai) => words.includes(ai));
@@ -125,7 +123,6 @@ class Gameboard extends Component {
       alert("YOU WIN, CONGRATS!! THE WORDS ARE :  \n\n\n" + myWords.join("\n"));
     } else {
       alert("YOU LOST, SORRY :( THE WORDS ARE \n\n\n" + myWords.join("\n"));
-
     }
     window.location.reload();
   };
@@ -136,11 +133,11 @@ class Gameboard extends Component {
         <h1>Match Me</h1>
         <p
           className={classes.message}
-          style={{ letterSpacing: "0.5px", color: "brown" }}
+          style={{ letterSpacing: "0.5px", color: "white" }}
         >
           Join to make{" "}
           <span
-            style={{ fontWeight: "bold", color: "green", fontSize: "larger" }}
+            style={{ fontWeight: "bold", color: "yellow", fontSize: "larger" }}
           >
             {wordLibrary.solutions.length}
           </span>{" "}
