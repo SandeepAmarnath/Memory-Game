@@ -28,8 +28,6 @@ h3 {
 .hidePic {
   visibility: hidden;
 }
-/* Note : When Using media queries, max-width means - till the width (max-width) the respective style applies
-.Hence we write in descending order */
 
 @media (max-width: 1400px) {
   .Picture {
@@ -58,15 +56,6 @@ h3 {
     height: 100px;
   }
 }
-
-/*
-@media (max-width: 550px) {
-  .Picture {
-    height: 90px;
-    font-size: 0.55em;
-    cursor: pointer;
-  }
-} */
 
 @media (max-width: 490px) {
   .Picture {

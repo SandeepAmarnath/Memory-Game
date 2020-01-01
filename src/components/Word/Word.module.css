@@ -9,7 +9,8 @@
   padding: 10px;
   font-size: 0.8125rem;
   box-sizing: border-box;
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   align-items: center;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   white-space: nowrap;
@@ -20,46 +21,8 @@
   box-shadow: 0 12px 12px -3px #1c1c1d80;
 }
 
-@media (max-width: 1400px) {
-  .Word {
-    /* padding: 8%; */
-  }
-}
-
 @media (max-width: 1100px) {
   .Word {
     padding: 8%;
   }
 }
-
-@media (max-width: 800px) {
-  /* You can tweak this as per your requirement */
-}
-@media (max-width: 700px) {
-  /* You can tweak this as per your requirement */
-}
-
-/* 
-@media (max-width: 550px) {
-  .Picture {
-    height: 90px;
-    font-size: 0.55em;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 490px) {
-  .Picture {
-    height: 90px;
-    font-size: 0.5em;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 440px) {
-  .Picture {
-    height: 90px;
-    font-size: 0.5em;
-    cursor: pointer;
-  }
-} */

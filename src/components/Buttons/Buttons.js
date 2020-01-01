@@ -3,7 +3,6 @@ import Button from "../Button/Button";
 import classes from "./Buttons.module.css";
 
 const buttons = (props) => {
-  console.log(props.status + " is the oPENn word");
   return (
     <div className={classes.Buttons}>
       <Button

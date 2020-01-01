@@ -65,13 +65,6 @@
   }
 }
 
-@media (max-width: 800px) {
-  /* You can tweak this as per your requirement */
-}
-@media (max-width: 700px) {
-  /* You can tweak this as per your requirement */
-}
-
 @media (max-width: 375px) {
   .WordsRow {
     text-align: left;
@@ -97,28 +90,3 @@
     cursor: pointer;
   }
 }
-
-/* 
-@media (max-width: 550px) {
-  .Picture {
-    height: 90px;
-    font-size: 0.55em;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 490px) {
-  .Picture {
-    height: 90px;
-    font-size: 0.5em;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 440px) {
-  .Picture {
-    height: 90px;
-    font-size: 0.5em;
-    cursor: pointer;
-  }
-} */
