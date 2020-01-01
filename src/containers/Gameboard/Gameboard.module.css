@@ -7,6 +7,10 @@
   height: 100vh;
 }
 
+.message {
+  font-size: large;
+}
+
 h1 {
   color:white;
 }
@@ -14,5 +18,29 @@ h1 {
 @media (max-width: 420px) {
   h1 {
     display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .message {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 620px) {
+  .message {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 440px) {
+  .message {
+    font-size: small;
+  }
+}
+
+@media (max-width: 350px) {
+  .message {
+    font-size: smaller;
   }
 }

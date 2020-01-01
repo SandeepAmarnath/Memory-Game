@@ -3,44 +3,43 @@ import classes from "./Pictures.module.css";
 import Picture from "../../components/Picture/Picture";
 
 class Pictures extends Component {
-  // words = stand, ing, cow,ard, hard,ship,space,craft,yard
   state = {
     img: {
       words: [
         {
-          word: "stand",
+          word: this.props.wordLibrary.words[0],
           imgStatus: "hide"
         },
         {
-          word: "ard",
+          word: this.props.wordLibrary.words[1],
           imgStatus: "hide"
         },
         {
-          word: "ing",
+          word: this.props.wordLibrary.words[2],
           imgStatus: "hide"
         },
         {
-          word: "cow",
+          word: this.props.wordLibrary.words[3],
           imgStatus: "hide"
         },
         {
-          word: "ship",
+          word: this.props.wordLibrary.words[4],
           imgStatus: "hide"
         },
         {
-          word: "hard",
+          word: this.props.wordLibrary.words[5],
           imgStatus: "hide"
         },
         {
-          word: "craft",
+          word: this.props.wordLibrary.words[6],
           imgStatus: "hide"
         },
         {
-          word: "yard",
+          word: this.props.wordLibrary.words[7],
           imgStatus: "hide"
         },
         {
-          word: "space",
+          word: this.props.wordLibrary.words[8],
           imgStatus: "hide"
         }
       ]
@@ -70,6 +69,7 @@ class Pictures extends Component {
           <div className={classes.PictureRow}>
             <Picture
               word={this.state.img.words[0].word}
+              // word={this.props.wordLibrary.words[0]}
               click={this.imageClickHandler}
               {...{ status: this.state.img.words[0].imgStatus }}
               {...(this.props.hiddenWords.includes(this.state.img.words[0].word)
@@ -78,6 +78,7 @@ class Pictures extends Component {
             />
             <Picture
               word={this.state.img.words[1].word}
+              // word={this.props.wordLibrary.words[0]}
               click={this.imageClickHandler}
               {...{ status: this.state.img.words[1].imgStatus }}
               {...(this.props.hiddenWords.includes(this.state.img.words[1].word)
@@ -86,6 +87,7 @@ class Pictures extends Component {
             />
             <Picture
               word={this.state.img.words[2].word}
+              // word={this.props.wordLibrary.words[0]}
               click={this.imageClickHandler}
               {...{ status: this.state.img.words[2].imgStatus }}
               {...(this.props.hiddenWords.includes(this.state.img.words[2].word)
@@ -97,6 +99,7 @@ class Pictures extends Component {
           <div className={classes.PictureRow}>
             <Picture
               word={this.state.img.words[3].word}
+              // word={this.props.wordLibrary.words[0]}
               click={this.imageClickHandler}
               {...{ status: this.state.img.words[3].imgStatus }}
               {...(this.props.hiddenWords.includes(this.state.img.words[3].word)
@@ -105,6 +108,7 @@ class Pictures extends Component {
             />
             <Picture
               word={this.state.img.words[4].word}
+              // word={this.props.wordLibrary.words[0]}
               click={this.imageClickHandler}
               {...{ status: this.state.img.words[4].imgStatus }}
               {...(this.props.hiddenWords.includes(this.state.img.words[4].word)
@@ -113,6 +117,7 @@ class Pictures extends Component {
             />
             <Picture
               word={this.state.img.words[5].word}
+              // word={this.props.wordLibrary.words[0]}
               click={this.imageClickHandler}
               {...{ status: this.state.img.words[5].imgStatus }}
               {...(this.props.hiddenWords.includes(this.state.img.words[5].word)
@@ -123,6 +128,7 @@ class Pictures extends Component {
           <div className={classes.PictureRow}>
             <Picture
               word={this.state.img.words[6].word}
+              // word={this.props.wordLibrary.words[0]}
               click={this.imageClickHandler}
               {...{ status: this.state.img.words[6].imgStatus }}
               {...(this.props.hiddenWords.includes(this.state.img.words[6].word)
@@ -131,6 +137,7 @@ class Pictures extends Component {
             />
             <Picture
               word={this.state.img.words[7].word}
+              // word={this.props.wordLibrary.words[0]}
               click={this.imageClickHandler}
               {...{ status: this.state.img.words[7].imgStatus }}
               {...(this.props.hiddenWords.includes(this.state.img.words[7].word)
@@ -139,6 +146,7 @@ class Pictures extends Component {
             />
             <Picture
               word={this.state.img.words[8].word}
+              // word={this.props.wordLibrary.words[0]}
               click={this.imageClickHandler}
               {...{ status: this.state.img.words[8].imgStatus }}
               {...(this.props.hiddenWords.includes(this.state.img.words[8].word)
