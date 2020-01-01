@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Memory-Word-Game/static/css/main.22ac15e7.chunk.css",
-    "main.js": "/Memory-Word-Game/static/js/main.8a7749f1.chunk.js",
-    "main.js.map": "/Memory-Word-Game/static/js/main.8a7749f1.chunk.js.map",
+    "main.css": "/Memory-Word-Game/static/css/main.9368f867.chunk.css",
+    "main.js": "/Memory-Word-Game/static/js/main.40a1314f.chunk.js",
+    "main.js.map": "/Memory-Word-Game/static/js/main.40a1314f.chunk.js.map",
     "runtime-main.js": "/Memory-Word-Game/static/js/runtime-main.6fe761c3.js",
     "runtime-main.js.map": "/Memory-Word-Game/static/js/runtime-main.6fe761c3.js.map",
     "static/css/2.8248f107.chunk.css": "/Memory-Word-Game/static/css/2.8248f107.chunk.css",
     "static/js/2.2de9466d.chunk.js": "/Memory-Word-Game/static/js/2.2de9466d.chunk.js",
     "static/js/2.2de9466d.chunk.js.map": "/Memory-Word-Game/static/js/2.2de9466d.chunk.js.map",
     "index.html": "/Memory-Word-Game/index.html",
-    "precache-manifest.2b2b3aa358ed67d46ee6cc41e56a86ef.js": "/Memory-Word-Game/precache-manifest.2b2b3aa358ed67d46ee6cc41e56a86ef.js",
+    "precache-manifest.82e060600e487fc764d933c05fee9add.js": "/Memory-Word-Game/precache-manifest.82e060600e487fc764d933c05fee9add.js",
     "service-worker.js": "/Memory-Word-Game/service-worker.js",
     "static/css/2.8248f107.chunk.css.map": "/Memory-Word-Game/static/css/2.8248f107.chunk.css.map",
-    "static/css/main.22ac15e7.chunk.css.map": "/Memory-Word-Game/static/css/main.22ac15e7.chunk.css.map",
+    "static/css/main.9368f867.chunk.css.map": "/Memory-Word-Game/static/css/main.9368f867.chunk.css.map",
     "static/js/2.2de9466d.chunk.js.LICENSE": "/Memory-Word-Game/static/js/2.2de9466d.chunk.js.LICENSE",
     "static/media/all.min.css": "/Memory-Word-Game/static/media/fa-solid-900.f6121be5.woff2"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.6fe761c3.js",
     "static/css/2.8248f107.chunk.css",
     "static/js/2.2de9466d.chunk.js",
-    "static/css/main.22ac15e7.chunk.css",
-    "static/js/main.8a7749f1.chunk.js"
+    "static/css/main.9368f867.chunk.css",
+    "static/js/main.40a1314f.chunk.js"
   ]
 }

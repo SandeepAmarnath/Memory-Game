@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "836cd4e96670540620756b02823dbf37",
+    "revision": "8b1c3005f149edb1a4469ac01ab39d77",
     "url": "/Memory-Word-Game/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Memory-Word-Game/static/css/2.8248f107.chunk.css"
   },
   {
-    "revision": "a329df7edb054b2fffa2",
-    "url": "/Memory-Word-Game/static/css/main.22ac15e7.chunk.css"
+    "revision": "eac2dee895a27ebc8956",
+    "url": "/Memory-Word-Game/static/css/main.9368f867.chunk.css"
   },
   {
     "revision": "bca9fd48c2556dad03ce",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Memory-Word-Game/static/js/2.2de9466d.chunk.js.LICENSE"
   },
   {
-    "revision": "a329df7edb054b2fffa2",
-    "url": "/Memory-Word-Game/static/js/main.8a7749f1.chunk.js"
+    "revision": "eac2dee895a27ebc8956",
+    "url": "/Memory-Word-Game/static/js/main.40a1314f.chunk.js"
   },
   {
     "revision": "5949fb1de752c2db40c8",
