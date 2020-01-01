@@ -22,6 +22,7 @@ const buttons = (props) => {
         name="Match the words"
         click={props.matchWordsClick}
         disabled={!props.matchWordEligible}
+        danger
       />
     </div>
   );
